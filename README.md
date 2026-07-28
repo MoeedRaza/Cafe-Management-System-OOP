@@ -1,7 +1,3 @@
-# Complete README.md File (Fixed Formatting)
-
-Copy and paste the entire content below into your README.md file:
-
 ```markdown
 # ☕ Café Management System
 
@@ -79,121 +75,112 @@ The **Café Management System** is a console-based application that demonstrates
 
 ## 🏗️ Architecture
 
-### Class Diagram
+### 🏗️ Class Diagram
 
+````markdown
+## 🏗️ Class Diagram
+
+```text
+                    +----------------------+
+                    |        User          |
+                    +----------------------+
+                    | - name              |
+                    | - address           |
+                    | - phone             |
+                    +----------------------+
+                    | + menu()            |
+                    +----------^-----------+
+                               |
+                      Inheritance
+                               |
+                    +----------+-----------+
+                    |      Customer        |
+                    +----------------------+
+                    | - username          |
+                    | - password          |
+                    | - email             |
+                    | - Order orderObj    |
+                    +----------------------+
+                    | + Login()           |
+                    | + Register()        |
+                    | + Payment()         |
+                    | + Receipt()         |
+                    | + DeleteAccount()   |
+                    | + Complaint()       |
+                    +----------+-----------+
+                               |
+                      Composition (has-a)
+                               |
+                               v
+                    +----------------------+
+                    |        Order         |
+                    +----------------------+
+                    | + PlaceOrder()      |
+                    | + ViewOrder()       |
+                    | + TrackOrder()      |
+                    +----------------------+
+
+      +----------------------------------------------+
+      |                  Manager                     |
+      +----------------------------------------------+
+      | - managerName                               |
+      | - password                                  |
+      | - itemName                                  |
+      | - itemPrice                                 |
+      | - itemQuantity                              |
+      +----------------------------------------------+
+      | + Login()                                   |
+      | + AddStock()                                |
+      | + ViewStock()                               |
+      | + AddItem()                                 |
+      | + RemoveItem()                              |
+      | + UpdatePrice()                             |
+      | + ViewRevenue()                             |
+      | + ViewFeedback()                            |
+      | + ViewCustomerInfo()                        |
+      +----------------------------------------------+
 ```
-+------------------------------------------+
-|                  User                      |
-|              (Base Class)                  |
-+------------------------------------------+
-| - name: string                            |
-| - address: string                         |
-| - phone: string                           |
-+------------------------------------------+
-| + menu(): void                            |
-+------------------------------------------+
-                    ▲
-                    │
-                    │ Inheritance
-                    │
-+------------------------------------------+
-|               Customer                    |
-|            (Derived Class)                |
-+------------------------------------------+
-| - username: string                        |
-| - password: string                        |
-| - email: string                           |
-| - orderObj: Order                         |
-+------------------------------------------+
-| + Login(): void                           |
-| + Register(): void                        |
-| + changeCredentials(): void               |
-| + RegisterComplaint(): void               |
-| + deleteAccount(): void                   |
-| + generateReceipt(): void                 |
-| + Payment(): void                         |
-+------------------------------------------+
-                    ◆
-                    │
-                    │ Composition
-                    │
-+------------------------------------------+
-|                  Order                    |
-+------------------------------------------+
-| + placeOrder(): void                      |
-| + viewOrder(): void                       |
-| + trackOrder(): void                      |
-+------------------------------------------+
+````
 
-+------------------------------------------+
-|                Manager                    |
-|           (Independent Class)             |
-+------------------------------------------+
-| - name: string                            |
-| - password: string                        |
-| - ItemName: string                        |
-| - ItemPrice: float                        |
-| - ItemQuantity: int                       |
-| - OrderId: int                            |
-+------------------------------------------+
-| + Admin(): void                           |
-| + ViewStock(): void                       |
-| + AddItems(): void                        |
-| + RemoveItems(): void                     |
-| + Revenue(): void                         |
-| + ChangePassword(): void                  |
-| + ViewFeedback(): void                    |
-| + UpdatePrice(): void                     |
-| + ViewCustomerInfo(): void                |
-| + Addstock(): void                        |
-+------------------------------------------+
-```
+### OOP Relationships
 
-### OOP Concepts Implemented
+| Class              | Relationship                                     |
+| ------------------ | ------------------------------------------------ |
+| `Customer → User`  | Inheritance                                      |
+| `Customer → Order` | Composition (Customer owns an Order object)      |
+| `Manager`          | Independent class responsible for administration |
 
-| Concept | Implementation |
-|---------|---------------|
-| **Inheritance** | `Customer` class inherits from `User` class |
-| **Composition** | `Customer` class contains `Order` object |
-| **Encapsulation** | All attributes are private with public getters/setters |
-| **Abstraction** | Virtual functions in base class |
-| **Polymorphism** | Virtual `menu()` function overridden |
 
----
+### 📂 Project Structure
 
+````markdown
 ## 📂 Project Structure
 
-```
+```text
 Cafe-Management-System/
 │
-├── src/                                 # Source code files
-│   ├── main.cpp                         # Entry point
-│   ├── customer.cpp                     # Customer class implementation
-│   ├── customer.h                       # Customer class declaration
-│   ├── manager.cpp                      # Manager class implementation
-│   ├── manager.h                        # Manager class declaration
-│   ├── Order.cpp                        # Order class implementation
-│   ├── Order.h                          # Order class declaration
-│   └── user.h                           # User base class
+├── main.cpp                 # Application entry point
+├── User.h                   # Base User class
+├── Customer.h               # Customer class declaration
+├── Customer.cpp             # Customer class implementation
+├── Order.h                  # Order class declaration
+├── Order.cpp                # Order class implementation
+├── Manager.h                # Manager class declaration
+├── Manager.cpp              # Manager class implementation
 │
-├── data/                                 # Data storage files
-│   ├── customer_info.txt                # Customer personal information
-│   ├── customeracc.txt                  # Customer login credentials
-│   ├── feedback.txt                     # Customer feedback
-│   ├── manager_info.txt                 # Manager credentials
-│   ├── menu.txt                         # Menu items with prices
-│   ├── receipt.txt                      # Last order receipt
-│   ├── revenue.txt                      # Revenue records
-│   └── stock.txt                        # Inventory stock levels
+├── customer_info.txt        # Customer information
+├── customeracc.txt          # Customer login credentials
+├── feedback.txt             # Customer feedback
+├── manager_info.txt         # Manager credentials
+├── menu.txt                 # Menu items and prices
+├── receipt.txt              # Generated receipts
+├── revenue.txt              # Revenue records
+├── stock.txt                # Inventory data
 │
-├── docs/                                 # Documentation
-│   ├── OOP Project Report.docx          # Complete project report
-│   └── UML Diagram.jpg                  # UML class diagram
-│
-├── README.md                            # Project documentation
-├── LICENSE                              # MIT License
-└── .gitignore                           # Git ignore file
+├── README.md
+└── LICENSE
 ```
+````
 
 ---
 
