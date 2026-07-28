@@ -1,0 +1,30 @@
+Large fries, 141.00, 3, 423.00
+Milkshake, 189.00, 1, 189.00
+Total Revenue: Rs.612.00
+Sandwich, 220.00, 4, 880.00
+Total Revenue: Rs.880.00
+Garlic Mayo Fries, 220.00, 4, 880.00
+Total Revenue: Rs.880.00
+Margrita, 200.00, 1, 200.00
+Total Revenue: Rs.200.00
+Sandwich, 220.00, 2, 440.00
+Total Revenue: Rs.440.00
+Loaded Fries, 221.00, 3, 663.00
+Mango Shake, 180.00, 3, 540.00
+Total Revenue: Rs.1203.00
+Zinger Burger, 450.00, 1, 450.00
+Total Revenue: Rs.450.00
+Beef Burger, 750.00, 2, 1500.00
+Total Revenue: Rs.1500.00
+Masala Fries, 170.00, 1, 170.00
+Total Revenue: Rs.170.00
+Cappucinno, 300.00, 1, 300.00
+Total Revenue: Rs.300.00
+Beef Burger, 750.00, 3, 2250.00
+Mango Shake, 180.00, 2, 360.00
+Total Revenue: Rs.2610.00
+Patty Burger, 250.00, 1, 250.00Margrita, 200.00, 1, 200.00
+Mango Shake, 180.00, 2, 360.00
+Zinger Burger, 450.00, 1, 450.00
+Beef Burger, 750.00, 1, 750.00
+Masala Fries, 170.00, 2, 340.00

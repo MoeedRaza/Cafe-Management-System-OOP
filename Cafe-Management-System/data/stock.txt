@@ -1,0 +1,9 @@
+Buns, 1
+Fries, 3
+Mayonnaise, 12
+Patty, 99
+Salad, 5
+water bottle, 99
+Tomato, 51
+onions, 12
+tomato, 12

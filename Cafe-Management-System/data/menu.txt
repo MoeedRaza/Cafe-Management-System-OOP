@@ -1,0 +1,11 @@
+Cappucinno, 251
+Fruit Juice, 150
+Zinger Burger, 450
+Beef Burger, 750
+Regular Fries, 150
+Masala Fries, 170
+Loaded Fries, 221
+Garlic Mayo Fries, 220
+Sandwich, 220
+Mango Shake, 180
+Pasta, 241
