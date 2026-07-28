@@ -153,10 +153,6 @@ The **Café Management System** is a console-based application that demonstrates
 
 ### 📂 Project Structure
 
-````markdown
-## 📂 Project Structure
-
-```text
 Cafe-Management-System/
 │
 ├── main.cpp                 # Application entry point
@@ -320,19 +316,6 @@ The system comes with pre-populated data for immediate testing:
 
 ---
 
-## 👥 Team Members
-
-| Name | ID | Role |
-|------|-----|
-| **Abdul Moeed Raza Kazmi** | Developer |
-
-### Supervisor
-
-Department of Computer Science  
-Air University, Islamabad
-
----
-
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -342,7 +325,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🙏 Acknowledgments
 
 - **Air University** - For providing the platform and resources
-- **Dr. Sumaira Farid** - For guidance and supervision
 - **Object-Oriented Programming Course** - For the knowledge and skills
 
 ---
@@ -364,7 +346,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For any queries or suggestions, please contact the team:
 
-- **Abdul Moeed**: [GitHub]https://github.com/MoeedRaza
+- **Abdul Moeed**: https://github.com/MoeedRaza
 
 ---
 
