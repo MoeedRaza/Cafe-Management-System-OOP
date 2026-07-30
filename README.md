@@ -1,34 +1,30 @@
 ```markdown
 # ☕ Café Management System
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![C++](https://img.shields.io/badge/C++-17-blue.svg)](https://isocpp.org/)
-[![Status](https://img.shields.io/badge/status-complete-brightgreen.svg)]()
-
-A comprehensive Café Management System built using **Object-Oriented Programming (OOP)** principles in C++. This system provides complete functionality for both customers and managers to streamline café operations.
+A comprehensive Café Management System built using Object-Oriented Programming (OOP) principles in C++. This system provides complete functionality for both customers and managers to streamline café operations.
 
 ---
 
 ## 📋 Table of Contents
 
-- [Overview](#-overview)
-- [Features](#-features)
-- [Architecture](#-architecture)
-- [Class Structure](#-class-structure)
-- [Project Structure](#-project-structure)
-- [Getting Started](#-getting-started)
-- [Usage Guide](#-usage-guide)
-- [Sample Data](#-sample-data)
-- [Screenshots](#-screenshots)
-- [Technologies Used](#-technologies-used)
-- [Team Members](#-team-members)
-- [Acknowledgments](#-acknowledgments)
+- Overview
+- Features
+- Architecture
+- Class Structure
+- Project Structure
+- Getting Started
+- Usage Guide
+- Sample Data
+- Screenshots
+- Technologies Used
+- Team Members
+- Acknowledgments
 
 ---
 
 ## 🎯 Overview
 
-The **Café Management System** is a console-based application that demonstrates the practical implementation of Object-Oriented Programming concepts. It serves as a complete solution for managing café operations, including:
+The Café Management System is a console-based application that demonstrates the practical implementation of Object-Oriented Programming concepts. It serves as a complete solution for managing café operations, including:
 
 - Customer registration and authentication
 - Order placement and tracking
